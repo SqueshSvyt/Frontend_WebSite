@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         for (let i = startIndex; i < Math.min(playlistsData.length, startIndex + playlistsPerPage); i++) {
             const playlist = playlistsData[i];
             const playlistHTML = `
-          <div class="col-md-4">
+          <div class="playlist-col">
             <div class="playlist">
               <img src="${playlist.imgSrc}" alt="${playlist.title}">
               <h4>${playlist.title}</h4>
@@ -39,15 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
     prevButton.addEventListener("click", function() {
         if (currentIndex > 0) {
-            currentIndex -= playlistsPerPage;
+            currentIndex -= 1;
             renderPlaylists(currentIndex);
         }
     });
 
     nextButton.addEventListener("click", function() {
         if (currentIndex + playlistsPerPage < playlistsData.length) {
-            currentIndex += playlistsPerPage;
+            currentIndex += 1;
             renderPlaylists(currentIndex);
         }
     });
+
+    // $('#navbar-toggler-btn').click(function(){
+    //     $('#navbarSupportedContent').toggleClass('show');
+    // });
 });

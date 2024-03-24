@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Responsive Design</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS if any -->
-    <link rel="stylesheet" href="./css/home-page-styles.css">
+    <link rel="stylesheet" href="./scss/home.page.css">
+    <link rel="stylesheet" href="./scss/footer.css">
+    <link rel="stylesheet" href="scss/header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
 
@@ -15,62 +17,41 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-white bg-white">
-    <a class="navbar-brand" href="#">
-        <img src="./images/Logo_bird2.jpg" alt="Logo" style="max-width: 70px; height: auto;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto mr-sm-2 my-2 my-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="./template/sing_in_page.html">Login</a>
-            </li>
-        </ul>
+<header class="header-outer">
+    <div class="header-inner responsive-wrapper-navbar">
+        <div class="header-logo">
+            <img src="./images/Logo_bird2.jpg"  alt="Not Found"/>
+        </div>
+        <nav class="header-navigation">
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="./template/sing_in_page.html">Log In</a>
+            <button>Menu</button>
+        </nav>
     </div>
-</nav>
+</header>
 
 <!-- content goes here -->
 <div class="container">
     <h2>Popular Playlists</h2>
-    <hr class="border-light">
-    <div id="playlistContainer" class="row">
-        <div class="col-md-6">
-            <button id="prevButton" class="btn btn-primary float-left">Previous</button>
-        </div>
-        <div class="col-md-6">
-            <button id="nextButton" class="btn btn-primary float-right">Next</button>
+    <div class="row">
+        <div id="playlistContainer" class="row">
+            <!-- Playlist items will be dynamically added here -->
         </div>
     </div>
-    <hr class="border-light">
 </div>
 
-<footer class="footer bg-dark text-white">
+<footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col">
                 <h5>About Us</h5>
-                <p>We are a passionate team dedicated to providing the best music experience for our users. Our mission is to curate the finest playlists that cater to all tastes and moods. Whether you're looking for the latest hits or hidden gems, we've got you covered. Join us on our musical journey and discover the perfect soundtrack for every moment.</p>
+                <p>We are a passionate team dedicated to providing the best music experience for our users. Our mission is to curate the finest playlists that cater to all tastes and moods. Join us on our musical journey and discover the perfect soundtrack for every moment.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col">
                 <h5>Contact Us</h5>
-                <ul class="list-unstyled">
+                <ul>
                     <li>Address: 123 Shebchenka, Lviv, Ukrain</li>
                     <li>Phone: +1 234 567890</li>
                     <li>Email: playst@playst.corp.com</li>
@@ -78,19 +59,19 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
-                <hr class="border-light">
-                <p class="text-center">© 2024 Your Company. All rights reserved.</p>
-            </div>
+            <hr>
+            <p class="text-center">© 2024 plcompany. All rights reserved.</p>
         </div>
     </div>
 </footer>
 
-<!-- Bootstrap and necessary scripts -->
-<script src="./js/bootstrap.min.js"></script>
+<!-- Necessary scripts -->
 <script src="./js/Home_page_script.js"></script>
 <script>
-
+    function toggleNavbar() {
+        var navbar = document.getElementById("navbarSupportedContent");
+        navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+    }
 </script>
 
 </body>
