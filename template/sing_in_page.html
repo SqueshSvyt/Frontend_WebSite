@@ -9,40 +9,43 @@
 <body>
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form action="../index.html">
                 <h1>Create Account</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"><img src="../images/facebook.png" alt=""></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"><img src="../images/social.png" alt=""></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"><img src="../images/linkedin.png" alt=""></i></a>
                 </div>
                 <span>or use your email for registration</span>
                 <label>
-                    <input type="text" placeholder="Name" />
+                    <input type="text" id="username" name="username" placeholder="Username" required><br>
                 </label>
                 <label>
-                    <input type="email" placeholder="Email" />
+                    <input type="email" id="email" placeholder="Email" name="email" required><br>
                 </label>
                 <label>
-                    <input type="password" placeholder="Password" />
+                    <input type="password" id="password" placeholder="Password" name="password" minlength="8" required><br>
+                </label>
+                <label>
+                    <input type="password" id="confirmPassword" placeholder="ConfirmPassword" name="confirmPassword" minlength="8" required><br>
                 </label>
                 <button>Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="./registered.html">
                 <h1>Sign in</h1>
                 <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-facebook-f"><img src="../images/facebook.png" alt=""></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"><img src="../images/social.png" alt=""></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"><img src="../images/linkedin.png" alt=""></i></a>
                 </div>
                 <span>or use your account</span>
                 <label>
-                    <input type="email" placeholder="Email" />
+                    <input type="email" placeholder="Email" name="email" required><br>
                 </label>
                 <label>
-                    <input type="password" placeholder="Password" />
+                    <input type="password" placeholder="Password" name="password" minlength="8" required><br>
                 </label>
                 <a href="#">Forgot your password?</a>
                 <button>Sign In</button>

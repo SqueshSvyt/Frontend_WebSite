@@ -6,7 +6,7 @@ body {
 }
 
 .main-content {
-  flex: 1; /* This pushes the footer to the bottom */
+  flex: 1;
 }
 
 .footer {
@@ -25,9 +25,25 @@ body {
       margin-right: -15px;
       margin-left: -15px;
 
-      .col {
+      .col-footer-2 {
         flex: 0 0 auto;
         width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        h5 {
+          color: whitesmoke;
+        }
+
+        ul {
+          list-style-type: none;
+          padding-left: 0;
+        }
+      }
+
+      .col-footer {
+        flex: 0 0 auto;
+        width: 100%;
         padding-right: 15px;
         padding-left: 15px;
 

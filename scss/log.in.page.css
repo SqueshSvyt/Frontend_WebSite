@@ -216,6 +216,10 @@ input {
   height: 40px;
   width: 40px;
 }
+.social-container a img {
+  height: 40px;
+  width: 40px;
+}
 
 footer {
   background-color: #222;
