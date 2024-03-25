@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Responsive Design</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS if any -->
-    <link rel="stylesheet" href="scss/main.page.style.css">
-    <link rel="stylesheet" href="./scss/footer.css">
-    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="../scss/main.page.style.css">
+    <link rel="stylesheet" href="../scss/footer.css">
+    <link rel="stylesheet" href="../scss/header.css">
+    <link rel="stylesheet" href="../scss/my.playlist.css">
     <style>
 
     </style>
@@ -19,25 +19,48 @@
 <header class="header-outer">
     <div class="header-inner responsive-wrapper-navbar">
         <div class="header-logo">
-            <img src="./images/Logo_bird2.jpg"  alt="Not Found"/>
+            <img src="../images/Logo_bird2.jpg"  alt="Not Found"/>
         </div>
         <nav class="header-navigation">
-            <a href="./index.html">Home</a>
-            <a href="./template/about_us.html">About</a>
-            <a href="./template/sing_in_page.html">Log In</a>
+            <a href="./registered.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="./my_playlist.html">My Playlist</a>
+            <a href="./profile.html">Profile</a>
+            <a href="../index.html">Log Out</a>
             <button>Menu</button>
         </nav>
     </div>
 </header>
 
-<!-- content goes here -->
-<div class="container">
-    <h2>Most Popular Playlists</h2>
-    <hr>
-    <div class="row">
-        <div id="playlistContainer" class="row">
-            <!-- Playlist items will be dynamically added here -->
+<div class="playlist-container">
+    <h2>My Playlists</h2>
+    <div class="playlist-list">
+        <!-- Placeholder for user's playlists -->
+        <div class="playlist-item">
+            <h3>My Favorite Songs</h3>
+            <p>Public Playlist</p>
+            <button class="add-music-button">Add Music</button>
         </div>
+        <div class="playlist-item">
+            <h3>Workout Mix</h3>
+            <p>Private Playlist</p>
+            <button class="add-music-button">Add Music</button>
+        </div>
+        <!-- Add more playlist items dynamically -->
+    </div>
+    <div class="add-playlist-form">
+        <h3>Add Playlist</h3>
+        <form action="#" method="post">
+            <label>
+                <input type="text" name="playlist-name" placeholder="Playlist Name" required>
+            </label>
+            <label for="playlist-type">Playlist Type:</label>
+            <select name="playlist-type" id="playlist-type" required>
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+            </select>
+            <button type="submit">Create Playlist</button>
+        </form>
     </div>
 </div>
 
@@ -67,7 +90,6 @@
 </footer>
 
 <!-- Necessary scripts -->
-<script src="./js/Home_page_script.js"></script>
 <script>
     function toggleNavbar() {
         const navbar = document.getElementById("navbarSupportedContent");

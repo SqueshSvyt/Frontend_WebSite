@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Design</title>
+    <!-- Bootstrap CSS -->
+    <!-- Your custom CSS if any -->
+    <link rel="stylesheet" href="../scss/main.page.style.css">
+    <link rel="stylesheet" href="../scss/footer.css">
+    <link rel="stylesheet" href="../scss/header.css">
+    <link rel="stylesheet" href="../scss/about.us.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<header class="header-outer">
+    <div class="header-inner responsive-wrapper-navbar">
+        <div class="header-logo">
+            <img src="../images/Logo_bird2.jpg"  alt="Not Found"/>
+        </div>
+        <nav class="header-navigation">
+            <a href="../index.html">Home</a>
+            <a href="./about_us.html">About</a>
+            <a href="./sing_in_page.html">Log In</a>
+            <button>Menu</button>
+        </nav>
+    </div>
+</header>
+
+<!-- content goes here -->
+<!-- content goes here -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About Our Company</h2>
+            <p>Welcome to Playst, your ultimate destination for curated playlists and music exploration. We are dedicated to providing an immersive music experience that caters to all tastes and moods.</p>
+            <p>Our mission is to connect people through the power of music. We believe that music transcends boundaries and brings people together, regardless of their background or preferences.</p>
+            <p>At Playst, we value creativity, diversity, and inclusivity. We celebrate music in all its forms and strive to create a platform where everyone feels welcome and inspired.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="../images/about_us.jpg" class="img-fluid" alt="About Us Image">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h2>Our Team</h2>
+            <p>Behind Playlist is a passionate team of music enthusiasts, designers, and developers who share a common goal: to revolutionize the way people experience music.</p>
+            <p>Meet some of the key members of our team:</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../images/Creator1.jfif" class="card-img-top" alt="Team Member 1">
+                <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Music Curator</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../images/Creator2.jfif" class="card-img-top" alt="Team Member 2">
+                <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">UI/UX Designer</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="../images/Creator3.jfif" class="card-img-top" alt="Team Member 3">
+                <div class="card-body">
+                    <h5 class="card-title">Michael Johnson</h5>
+                    <p class="card-text">Lead Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-footer-2">
+                <h5>About Us</h5>
+                <p>We are a passionate team dedicated to providing the best music experience for our users. Our mission is to curate the finest playlists that cater to all tastes and moods. Join us on our musical journey and discover the perfect soundtrack for every moment.</p>
+            </div>
+            <div class="col-footer-2">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li>Address: 123 Shebchenka, Lviv, Ukrain</li>
+                    <li>Phone: +1 234 567890</li>
+                    <li>Email: playst@playst.corp.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-footer">
+                <hr>
+                <p class="text-center">© 2024 company. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Necessary scripts -->
+<script>
+    function toggleNavbar() {
+        const navbar = document.getElementById("navbarSupportedContent");
+        navbar.style.display = (navbar.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

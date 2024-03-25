@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Responsive Design</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS if any -->
-    <link rel="stylesheet" href="scss/main.page.style.css">
-    <link rel="stylesheet" href="./scss/footer.css">
-    <link rel="stylesheet" href="scss/header.css">
+    <link rel="stylesheet" href="../scss/main.page.style.css">
+    <link rel="stylesheet" href="../scss/footer.css">
+    <link rel="stylesheet" href="../scss/header.css">
+    <link rel="stylesheet" href="../scss/profile.styles.css">
     <style>
 
     </style>
@@ -19,27 +19,53 @@
 <header class="header-outer">
     <div class="header-inner responsive-wrapper-navbar">
         <div class="header-logo">
-            <img src="./images/Logo_bird2.jpg"  alt="Not Found"/>
+            <img src="../images/Logo_bird2.jpg"  alt="Not Found"/>
         </div>
         <nav class="header-navigation">
-            <a href="./index.html">Home</a>
-            <a href="./template/about_us.html">About</a>
-            <a href="./template/sing_in_page.html">Log In</a>
+            <a href="./registered.html">Home</a>
+            <a href="#">About Us</a>
+            <a href="./my_playlist.html">My Playlist</a>
+            <a href="./profile.html">Profile</a>
+            <a href="../index.html">Log Out</a>
             <button>Menu</button>
         </nav>
     </div>
 </header>
 
 <!-- content goes here -->
-<div class="container">
-    <h2>Most Popular Playlists</h2>
-    <hr>
-    <div class="row">
-        <div id="playlistContainer" class="row">
-            <!-- Playlist items will be dynamically added here -->
+<div class="profile-card">
+    <img src="../images/Creator1.jfif" alt="Profile Picture">
+    <div class="profile-details">
+        <h2>John Doe</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>Location: New York, USA</p>
+        <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla sed lectus malesuada ultricies. Vivamus lobortis euismod justo.</p>
+        <div class="music-preferences">
+            <h3>Favorite Genres</h3>
+            <ul>
+                <li>Pop</li>
+                <li>Rock</li>
+                <li>Electronic</li>
+            </ul>
         </div>
+        <div class="playlist-section">
+            <h3>My Favorite Playlists</h3>
+            <div class="playlist">
+                <img src="../images/No_image.jpg" alt="Playlist Image">
+                <h4>Party Mix</h4>
+                <p>25 songs</p>
+            </div>
+            <div class="playlist">
+                <img src="../images/No_image.jpg" alt="Playlist Image">
+                <h4>Chill Vibes</h4>
+                <p>15 songs</p>
+            </div>
+            <!-- Add more playlists as needed -->
+        </div>
+        <a href="./edit_profile.html" class="edit-button">Edit Profile</a>
     </div>
 </div>
+
 
 <footer class="footer">
     <div class="container">
@@ -67,7 +93,6 @@
 </footer>
 
 <!-- Necessary scripts -->
-<script src="./js/Home_page_script.js"></script>
 <script>
     function toggleNavbar() {
         const navbar = document.getElementById("navbarSupportedContent");
