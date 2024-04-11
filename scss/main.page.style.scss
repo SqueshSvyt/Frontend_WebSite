@@ -36,8 +36,7 @@ body {
 
 .playlist-col {
   flex: 0 0 auto;
-  width: calc(33.333333% - 15px); // Adjust margin as per your requirement
-  margin-right: 15px; // Adjust margin as per your requirement
+  width: calc(33.333333% - 15px);
 
   &:last-child {
     margin-right: 0;

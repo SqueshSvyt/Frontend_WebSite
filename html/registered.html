@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS if any -->
     <link rel="stylesheet" href="../scss/main.page.style.css">
+    <link rel="stylesheet" href="../scss/my.playlist.css">
     <link rel="stylesheet" href="../scss/footer.css">
     <link rel="stylesheet" href="../scss/header.css">
     <style>
@@ -26,39 +27,20 @@
             <a href="#">About Us</a>
             <a href="./my_playlist.html">My Playlist</a>
             <a href="./profile.html">Profile</a>
-            <a href="../index.html">Log Out</a>
+            <a id="logoutButton">Log Out</a>
             <button>Menu</button>
         </nav>
     </div>
 </header>
 
 <!-- content goes here -->
+<!-- content goes here -->
 <div class="container">
     <h2>Most Popular Playlists</h2>
     <hr>
     <div class="row">
-        <div class="row">
-            <div class="playlist-col">
-                <div class="playlist">
-                    <img src="../images/No_image.jpg" alt="Playlist 1">
-                    <h4>Playlist 1</h4>
-                    <p>Description of Playlist 1</p>
-                </div>
-            </div>
-            <div class="playlist-col">
-                <div class="playlist">
-                    <img src="../images/No_image.jpg" alt="Playlist 1">
-                    <h4>Playlist 2</h4>
-                    <p>Description of Playlist 2</p>
-                </div>
-            </div>
-            <div class="playlist-col">
-                <div class="playlist">
-                    <img src="../images/No_image.jpg" alt="Playlist 1">
-                    <h4>Playlist 3</h4>
-                    <p>Description of Playlist 3</p>
-                </div>
-            </div>
+        <div id="playlistContainer" class="row">
+            <!-- Playlist items will be dynamically added here -->
         </div>
     </div>
 </div>
@@ -89,7 +71,7 @@
 </footer>
 
 <!-- Necessary scripts -->
-<script src="../js/Home_page_script.js"></script>
+<script src="../js/profile_page.js"></script>
 <script>
     function toggleNavbar() {
         const navbar = document.getElementById("navbarSupportedContent");

@@ -29,11 +29,11 @@
                 <label>
                     <input type="password" id="confirmPassword" placeholder="ConfirmPassword" name="confirmPassword" minlength="8" required><br>
                 </label>
-                <button>Sign Up</button>
+                <button type="button" onclick="registerUser()">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="./registered.html">
+            <form id="loginForm" action="./registered.html">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"><img src="../images/facebook.png" alt=""></i></a>
@@ -42,13 +42,13 @@
                 </div>
                 <span>or use your account</span>
                 <label>
-                    <input type="email" placeholder="Email" name="email" required><br>
+                    <input placeholder="Email" name="username" required><br>
                 </label>
                 <label>
                     <input type="password" placeholder="Password" name="password" minlength="8" required><br>
                 </label>
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">

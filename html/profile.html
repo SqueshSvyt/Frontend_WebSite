@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="../scss/footer.css">
     <link rel="stylesheet" href="../scss/header.css">
     <link rel="stylesheet" href="../scss/profile.styles.css">
-    <style>
 
-    </style>
 </head>
 <body>
 
@@ -26,7 +24,7 @@
             <a href="#">About Us</a>
             <a href="./my_playlist.html">My Playlist</a>
             <a href="./profile.html">Profile</a>
-            <a href="../index.html">Log Out</a>
+            <a id="logoutButton">Log Out</a>
             <button>Menu</button>
         </nav>
     </div>
@@ -48,7 +46,7 @@
                 <li>Electronic</li>
             </ul>
         </div>
-        <div class="playlist-section">
+        <div id="playlistsContainerProfile" class="playlist-section">
             <h3>My Favorite Playlists</h3>
             <div class="playlist">
                 <img src="../images/No_image.jpg" alt="Playlist Image">
@@ -93,6 +91,7 @@
 </footer>
 
 <!-- Necessary scripts -->
+<script src="../js/profile_page.js"></script>
 <script>
     function toggleNavbar() {
         const navbar = document.getElementById("navbarSupportedContent");
